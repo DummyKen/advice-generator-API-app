@@ -1,0 +1,83 @@
+/* font*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    gap: 20px;
+    text-align: center;
+    padding: 2rem;
+    margin: 30vh auto;
+    background-color: hsl(217, 19%, 24%);
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+}
+.card .adviceIdBox{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.card .advice{
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+}
+.card .divider{
+    width: 100%;
+    margin: auto;
+}
+.card .divider img{
+    width: 80%;
+
+}
+
+legend {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 1000000px;
+    background-color: hsl(150, 100%, 66%);
+}
+legend:hover{
+    cursor: pointer;
+    box-shadow: -2px -4px 10px 10px hsla(150, 100%, 66%, 0.192);
+}
+legend .dice{
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    border: none;
+    border-radius: 1000000px;
+    background-color: hsl(150, 100%, 66%);
+}
+legend .dice img{
+    vertical-align: middle;
+}
+
+.attribution{
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* for mobile */
+@media (max-width: 375px) {
+    .card{
+        width: 80vw;
+    }
+    
+}
